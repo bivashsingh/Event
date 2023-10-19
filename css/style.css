@@ -1,0 +1,439 @@
+/* HEADER PART START */
+
+
+
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Base styles for the header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.left-content, .right-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 15px;
+  margin-left: 10px;
+}
+
+.text1 h1 {
+  margin: 0;
+}
+
+/* Responsive styles for the header */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack elements vertically for smaller screens */
+  }
+
+  .text1 h1 {
+    font-size: 18px; /* Adjust the font size as needed */
+  }
+
+  .logo {
+    margin: 10px 0; /* Adjust the margins as needed */
+  }
+}
+
+
+
+
+
+    /* HEADER PART END */
+
+
+      /* Navigation bar styles STAR */
+      nav {
+        background-color:beige; /* light background color */
+        color: white; /* Text color */
+        padding: 10px;
+        text-align: center;
+        border-width: 20px;
+      }
+  
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        
+        
+      }
+  
+      nav li {
+        display: inline;
+        margin-right: 5px;
+      }
+  
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+        display: inline-block;
+        background-color: #555;
+        border-radius: 5px;
+      }
+  
+      nav a:hover {
+        background-color: #333; /* Darker background on hover */
+        
+      }
+  
+
+      /* Dropdown menu styles START */
+    .dropdown:hover .dropdown-content {
+        display: block;
+      }
+  
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+  
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: beige;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        left: 0;
+      }
+  
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        margin-top: 2px;
+      }
+  
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+       /* Dropdown menu styles START */
+
+       /* Responsive styles for the navigation bar */
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav li {
+    display: block;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  nav a {
+    padding: 8px 0;
+  }
+
+  .dropdown-content {
+    left: initial;
+    right: 0;
+  }
+}
+
+
+      /* Navigation bar styles END */
+
+      /*FOOTER START */
+      
+
+
+      
+        /*FOOTER END */
+
+
+      /* IMAGE SLIDER START */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+      
+      /* IMAGE SLIDER END */
+
+
+ 
+/* Welcome to National Conclave START */
+
+      .content {
+        display: flex;
+        flex-direction: column; /* Change to a column layout on smaller screens */
+        max-width: 85%;
+        margin: 60px;
+      }
+      
+      .left-content1 {
+        width: 100%; /* Take full width on smaller screens */
+        padding: 0 20px; /* Add some padding */
+      }
+      
+      .right-content1 {
+        width: 100%; /* Take full width on smaller screens */
+        padding: 0 20px; /* Add some padding */
+      }
+      
+      table {
+        width: 100%; /* Full width on smaller screens */
+        height: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        padding: 0; /* Remove padding */
+        border: 1px solid rgb(201, 200, 200);
+        
+      }
+      
+      
+      th,
+      td {
+        
+        text-align: left;
+        padding: 10px;
+      }
+      
+      th {
+        background-color: #f2f2f2;
+      }
+      
+      .left-content1 p {
+        text-align: justify;
+      }
+      
+      /* Alternating row colors */
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      
+      tr:nth-child(odd) {
+        background-color: #ffffff;
+      }
+      
+      @media (min-width: 768px) {
+        /* Apply the following styles for screens wider than 768px */
+        .content {
+          flex-direction: row;
+        }
+      
+        .left-content1 {
+          width: 60%;
+        padding: 0 20px;
+        padding-right: 20px; /* Restore right padding */
+        padding-left: 20px; /* Restore left padding */
+        box-sizing: border-box; /* Include padding in width calculation */
+       /* border-right: 1px solid rgb(201, 200, 200); /* Add a border between sections */
+      }
+      
+        .right-content1 {
+          width: 35%;
+          padding: 0 20px;
+        }
+      }
+      
+/* Welcome to National Conclave END */
+
+
+
+
+  /* PARTNER INSTITUTION START */
+
+  .partner-institutions, .industry-partners {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.partner-logos, .industry-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partner-logos img, .industry-logos img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    margin: 10px; /* Adjust spacing between logos */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .partner-logos img, .industry-logos img {
+        width: 150px; /* Adjust the size for smaller screens */
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .partner-logos img, .industry-logos img {
+        width: 100px; /* Adjust the size for even smaller screens */
+        height: 100px;
+    }
+}
+
+/* PARTNER INSTITUTION END */
+
+
+
+/* Mission of the proposed Conclave START */
+.mission {
+  max-width: 800px; /* Adjust the max width as needed */
+  margin: 0 auto; /* Center-align the element horizontally */
+  padding: 20px; /* Add padding around the element */
+  margin: 60px; /* Adjust the left margin as needed */
+   /* Adjust the right margin as needed */
+}
+
+.mission h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.mission ul {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 18px;
+  color: #333;
+  
+}
+
+@media (max-width: 768px) {
+  ul {
+      font-size: 16px;
+  }
+}
+
+/* Mission of the proposed Conclave END */
+
+
+
+
+
+/* LESSON */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: #333;
+  color: #fefefe;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+}
+
+.footer .content p {
+  margin-bottom: 10px;
+}
+
+.footer .content a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.footer .content a:hover {
+  border-bottom: 1px solid #971717;
+}
+
+.footer .content h4 {
+  margin-bottom: 1.3rem;
+  font-size: 19px;
+}
+
+
+
+
+
+@media (max-width: 767px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .footer {
+    position: unset;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .content,
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: unset;
+  }
+}
+
